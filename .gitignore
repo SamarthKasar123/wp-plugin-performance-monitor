@@ -1,0 +1,91 @@
+# WordPress Plugin Performance Monitor - .gitignore
+
+# Configuration files with sensitive data
+config/database.php
+config/wordpress-sites.php
+config/email.php
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Logs
+logs/
+*.log
+error_log
+
+# Cache
+cache/
+tmp/
+
+# Upload directories
+uploads/
+reports/generated/
+
+# Vendor dependencies (if using Composer)
+vendor/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.atom/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.backup
+*.bak
+*.swp
+*.swo
+*~
+
+# Node modules (if using npm for frontend tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build directories
+build/
+dist/
+
+# Testing
+coverage/
+.phpunit.result.cache
+
+# Database exports (except schema)
+*.sql
+!database/schema.sql
+
+# Temporary files
+*.tmp
+*.temp
+
+# Security and sensitive files
+private_keys/
+certificates/
+secrets/
+
+# Local development files
+.local/
+local/
+
+# Generated documentation
+docs/generated/
+
+# Package managers
+composer.lock
+package-lock.json
+
+# Runtime files
+*.pid
+*.lock
